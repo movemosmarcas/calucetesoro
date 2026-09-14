@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M3RSPCSP');</script>
+    <!-- End Google Tag Manager -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calucé Senior Living - Cuidado de Lujo</title>
+    <meta name="description" content="La tranquilidad del cuidado de lujo para el adulto mayor en Calucé. Agende su visita a nuestras sedes exclusivas.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico?v=2" type="image/x-icon">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Rufina:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css?v=3">
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M3RSPCSP"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="Caluce_senior_living_logo_x2.webp" alt="Calucé Senior Living Logo" class="logo">
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-slideshow">
+                <div class="hero-slide active" style="background-image: url('Imagenes/AL Caluce Med ALE_0541.jpg');"></div>
+                <div class="hero-slide" style="background-image: url('Imagenes/CF1BFF68-5DA4-4A63-A7FF-D19A59F9B693_1_201_a.jpeg');"></div>
+            </div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="hero-text-area">
+                    <h2 style="color: white; font-size: 2.5rem; font-family: var(--font-heading); margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-weight: 600;">Calucé El Tesoro</h2>
+                    <h1 class="hero-title">
+                        Tu lugar para vivir<span class="luxury-highlight">con tranquilidad y bienestar</span>se encuentra aquí
+                    </h1>
+                </div>
+                
+                <div class="hero-form-area">
+                    <div class="form-card">
+                        <h2 class="form-subtitle">Agenda tu visita hoy</h2>
+                        
+                        <form id="contact-form" class="lead-form">
+                            <div class="form-group">
+                                <label for="nombre">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="celular">Celular</label>
+                                    <input type="tel" id="celular" name="celular" required placeholder="Ej. 300 123 4567">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="para_quien">¿Para quién busca la residencia?</label>
+                                <select id="para_quien" name="para_quien" required>
+                                    <option value="" disabled selected>Seleccione una opción</option>
+                                    <option value="Familiar">Familiar</option>
+                                    <option value="Para mi">Para mí</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="sede">¿Cuál de nuestras sedes te interesa visitar?</label>
+                                <select id="sede" name="sede" required>
+                                    <option value="" disabled selected>Seleccione una sede</option>
+                                    <option value="Chia">Chía desde $9.826.000</option>
+                                    <option value="Lindaraja">Lindaraja desde $11.832.000</option>
+                                    <option value="103">103 desde $12.900.000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="servicio">¿Cuál de nuestros servicios te interesa?</label>
+                                <div class="services-checkbox-group" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-residencia" name="servicio[]" value="Residencia Permanente">
+                                        <label for="srv-residencia" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Residencia Permanente</label>
+                                    </div>
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-temporal" name="servicio[]" value="Estancia Temporal">
+                                        <label for="srv-temporal" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Estancia Temporal</label>
+                                    </div>
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-club" name="servicio[]" value="Club Día">
+                                        <label for="srv-club" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Club Día</label>
+                                    </div>
+                                    <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                        <input type="checkbox" id="srv-recuperacion" name="servicio[]" value="Recuperación poshospitalaria">
+                                        <label for="srv-recuperacion" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Recuperación poshospitalaria</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #c8d4c1;">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="politica" name="politica" required>
+                                <label for="politica">Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></label>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">
+                                <span>AGENDAR UNA VISITA</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-container">
+                <h2 class="cta-text">Planes de vivienda asistida desde <span class="cta-price">$12.800.000</span></h2>
+                <a href="https://wa.me/573105649905?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20Caluc%C3%A9" class="btn-whatsapp-cta" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Agenda tu visita
+                </a>
+            </div>
+        </section>
+
+        <section class="quote-section">
+            <p class="quote-text">&#8220;Calucé Tesoro en Medellín fue diseñado para quienes buscamos siempre el bienestar y el confort de un cuidado profesional, en un espacio privilegiado&#8221;</p>
+        </section>
+
+        <section class="video-section">
+            <div class="video-container-wrapper">
+                <div class="video-column">
+                    <h3 class="video-preview-title">Mira este video recorrido por nuestras sedes</h3>
+                    <div class="video-box" style="cursor: pointer;" data-youtube-id="F8IbhMxmTkQ" onclick="openVideoModal(this.dataset.youtubeId)">
+                        <img src="Imagenes/IMG_0624.jpg" alt="Video recorrido Calucé" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" aria-label="Reproducir video">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="video-text">
+                    <h2 class="section-title">ELIGE LA TRANQUILIDAD</h2>
+                    <p class="section-description">de contar con el respaldo de <span class="highlight-text">más de 50 años</span> de experiencia en el cuidado del adulto mayor</p>
+                    <button class="cta-btn" style="margin-top: 2rem;" onclick="openFormModal()">AGENDA UNA VISITA</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Lo que dicen nuestras familias y residentes</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="video-box" style="border-radius: 16px; cursor: pointer;" data-youtube-id="kpTTapqYyjA" onclick="openVideoModal(this.dataset.youtubeId)">
+                        <img src="Imagenes/testimonial_1.jpg" alt="Testimonio de Residente" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" style="width: 60px; height: 60px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-info">
+                        <p class="testimonial-quote">"Ha sido una experiencia maravillosa, ha llenado todas las expectativas y nos encontramos muy felices con el nivel profesional y humano"</p>
+                        <h4 class="testimonial-name">Sonia Gómez, Residente</h4>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="video-box" style="border-radius: 16px; cursor: pointer;" data-youtube-id="0jp0pkV0w2U" onclick="openVideoModal(this.dataset.youtubeId)">
+                        <img src="https://img.youtube.com/vi/0jp0pkV0w2U/maxresdefault.jpg" alt="Testimonio de Familiar" class="video-thumb">
+                        <div class="video-overlay"></div>
+                        <button class="play-btn" style="width: 60px; height: 60px;">
+                            <svg viewBox="0 0 24 24" fill="currentColor" style="width: 24px; height: 24px;">
+                                <path d="M8 5v14l11-7z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="testimonial-info">
+                        <p class="testimonial-quote">"Amo todo de Hábitat, es una gran comunidad con personas amables, un equipo amigable, se lo recomiendo a todos mis amigos y personas que conozco"</p>
+                        <h4 class="testimonial-name">Alcira Trujillo, Residente</h4>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+        <section class="cta-banner">
+            <div class="cta-container">
+                <h2 class="cta-text" style="font-size: 1.6rem;">Llámanos: <span class="cta-price">310 564 99 05</span></h2>
+                <a href="https://wa.me/573105649905?text=Hola,%20me%20interesa%20conocer%20m%C3%A1s%20sobre%20los%20servicios%20de%20Caluc%C3%A9" class="btn-whatsapp-cta" target="_blank" rel="noopener noreferrer">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.489-1.761-1.663-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.575-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    Escríbenos por WhatsApp
+                </a>
+            </div>
+        </section>
+
+
+        <section class="gallery-section">
+            <div class="gallery-header">
+                <h2 class="gallery-title">Nuestras Sedes e Instalaciones</h2>
+                <div class="title-divider"></div>
+            </div>
+            <div class="gallery-grid">
+                <img src="Imagenes/CF1BFF68-5DA4-4A63-A7FF-D19A59F9B693_1_201_a.jpeg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/AL Caluce Med ALE_0235.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/AL Caluce Med ALE_0541.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/Captura de pantalla 2025-06-25 a la(s) 3.12.56 p.m..png" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/Captura de pantalla 2025-06-25 a la(s) 3.13.15 p.m..png" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/DJI_0825-2.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/IMG_0624.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/IMG_0641.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/IMG_1475.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/IMG_4123.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/PHOTO-2025-02-07-11-42-15.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+                <img src="Imagenes/AL Caluce Med ALE_0541.jpg" alt="Instalaciones Calucé" class="gallery-item" loading="lazy">
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Lo que incluye nuestro plan de residencia asistida</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Card 1 -->
+                <div class="service-card">
+                    <h3 class="card-title">Cuidados y Salud</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Evaluación inicial de ingreso</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Seguimiento periódico al nivel de cuidado requerido</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Coordinación de asistencia médica 24h</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Cuidados básicos de enfermería (signos vitales, glucometrías, oximetrías)</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Control de peso y talla</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Administración de medicamentos formulados</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Rondas nocturnas</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="service-card">
+                    <h3 class="card-title">Bienestar y Rutina</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Dietas acordes a las condiciones de salud y comorbilidades</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Supervisión de actividades básicas de la vida diaria</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Supervisión y seguimiento de riesgos</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Actividades sociales, espirituales, lúdicas y culturales</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Visitas con horarios flexibles</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="service-card">
+                    <h3 class="card-title">Comodidades y Seguridad</h3>
+                    <ul class="service-list">
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Servicios públicos, Wi-Fi y televisión por cable</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Servicio de llamada de emergencia</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Aseo diario y mantenimiento general de la habitación</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Lavandería de ropa personal</li>
+                        <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"></polyline></svg> Vigilancia y seguridad privada 24/7</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="faq-section">
+            <div class="services-header">
+                <h2 class="services-main-title">Preguntas Frecuentes</h2>
+                <div class="title-divider"></div>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Qué tipos de cuidados ofrecen?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ofrecemos cuidados básicos de enfermería, seguimiento de signos vitales, administración de medicamentos, apoyo en actividades básicas de la vida diaria y asistencia especializada según las necesidades de cada residente.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Se permiten visitas de familiares?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>En CALUCÉ no contamos con horarios establecidos para las visitas. Promovemos y valoramos activamente el vínculo familiar, por lo que nuestros residentes pueden recibir a sus familiares y seres queridos de manera flexible, favoreciendo espacios de encuentro y acompañamiento en un ambiente cómodo, seguro y acogedor.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>¿Tienen planes de alimentación especial?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Totalmente. Nuestro equipo de nutrición diseña dietas personalizadas acordes a las condiciones de salud, comorbilidades y requerimientos específicos de cada uno de nuestros huéspedes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-locations">CHÍA &middot; LINDARAJA &middot; BOGOTÁ 103</div>
+            <div class="footer-legal">
+                &copy; 2026 Calucé. Todos los derechos reservados. | <a href="#" onclick="openPolicyModal(event)">Política de tratamiento de datos</a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Floating Action Button -->
+    <div class="fab-container">
+        <button class="fab-btn" onclick="openFormModal()">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            AGENDA TU VISITA
+        </button>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="modal">
+        <div class="modal-content video-modal-content">
+            <span class="close-modal" id="close-video-modal">&times;</span>
+            <div class="video-iframe-container">
+                <iframe id="youtube-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div id="form-modal" class="modal">
+        <div class="modal-content" style="max-width: 500px; padding: 2rem; max-height: 90vh; overflow-y: auto;">
+            <span class="close-modal" id="close-form-modal">&times;</span>
+            <div class="form-card" style="box-shadow: none; padding: 0; background: transparent;">
+                <h2 class="form-subtitle">Agenda tu visita hoy</h2>
+                
+                <form id="popup-contact-form" class="lead-form">
+                    <div class="form-group">
+                        <label for="nombre-popup">Nombre completo</label>
+                        <input type="text" id="nombre-popup" name="nombre" required placeholder="Ej. Juan Pérez">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="celular-popup">Celular</label>
+                            <input type="tel" id="celular-popup" name="celular" required placeholder="Ej. 300 123 4567">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email-popup">Email</label>
+                            <input type="email" id="email-popup" name="email" required placeholder="correo@ejemplo.com">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="para_quien-popup">¿Para quién busca la residencia?</label>
+                        <select id="para_quien-popup" name="para_quien" required>
+                            <option value="" disabled selected>Seleccione una opción</option>
+                            <option value="Familiar">Familiar</option>
+                            <option value="Para mi">Para mí</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sede-popup">¿Cuál de nuestras sedes te interesa visitar?</label>
+                        <select id="sede-popup" name="sede" required>
+                            <option value="" disabled selected>Seleccione una sede</option>
+                            <option value="Chia">Chía desde $9.826.000</option>
+                            <option value="Lindaraja">Lindaraja desde $11.832.000</option>
+                            <option value="103">103 desde $12.900.000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="servicio-popup">¿Cuál de nuestros servicios te interesa?</label>
+                        <div class="services-checkbox-group" style="margin-top: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-residencia-popup" name="servicio[]" value="Residencia Permanente">
+                                <label for="srv-residencia-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Residencia Permanente</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-temporal-popup" name="servicio[]" value="Estancia Temporal">
+                                <label for="srv-temporal-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Estancia Temporal</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-club-popup" name="servicio[]" value="Club Día">
+                                <label for="srv-club-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Club Día</label>
+                            </div>
+                            <div class="form-checkbox" style="margin: 0; align-items: center;">
+                                <input type="checkbox" id="srv-recuperacion-popup" name="servicio[]" value="Recuperación poshospitalaria">
+                                <label for="srv-recuperacion-popup" style="font-weight: 400; font-size: 0.9rem; margin: 0; cursor: pointer;">Recuperación poshospitalaria</label>
+                            </div>
+                        </div>
+                    </div>
+                    <hr style="margin: 1.5rem 0; border: none; border-top: 1px solid #c8d4c1;">
+                    <div class="form-checkbox">
+                        <input type="checkbox" id="politica-popup" name="politica" required>
+                        <label for="politica-popup">Acepto la <a href="politica.html" target="_blank">política de tratamiento de datos</a></label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>AGENDAR UNA VISITA</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js?v=4"></script>
+</body>
+</html>
+<!-- Auto-deploy test -->
