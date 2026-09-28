@@ -1511,3 +1511,49 @@ body {
         padding-bottom: 0 !important;
     }
 }
+
+@media (max-width: 900px) {
+    /* Hide duplicate header logo */
+    .header {
+        display: none !important;
+    }
+    
+    /* Reorder hero content */
+    .hero-content {
+        order: 1 !important;
+        background-color: #1c2b20 !important;
+        height: auto !important;
+        position: relative !important;
+    }
+    
+    .hero-slideshow {
+        order: 2 !important;
+        position: relative !important;
+        height: 60vh !important;
+        min-height: 400px !important;
+    }
+    
+    .hero-split-overlay {
+        display: none !important;
+    }
+    
+    /* Center logo inside hero */
+    .hero-text-area img {
+        align-self: center !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    /* Fix FAB button cutoff */
+    .fab-btn {
+        white-space: nowrap !important;
+        font-size: 0.8rem !important;
+        padding: 0.8rem 1rem !important;
+    }
+    .fab-container {
+        right: 50% !important;
+        transform: translateX(50%) translateY(20px) !important;
+    }
+    .fab-container.visible {
+        transform: translateX(50%) translateY(0) !important;
+    }
+}
