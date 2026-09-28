@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // --- NUEVO: CAPTURAR UTMS Y DATOS DE ORIGEN ---
                 const urlParams = new URLSearchParams(window.location.search);
-                formData.append('fuente_lead', 'Landing Page Caluce');
+                formData.append('fuente_lead', 'Landing Page Caluce Tesoro');
+                formData.append('sheet_name', 'Leads Tesoro');
                 formData.append('utm_source', urlParams.get('utm_source') || '');
                 formData.append('utm_medium', urlParams.get('utm_medium') || '');
                 formData.append('utm_campaign', urlParams.get('utm_campaign') || '');
@@ -50,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     params.append(pair[0], pair[1]);
                 }
                 
-                fetch('https://script.google.com/macros/s/AKfycbyLURkc8z_KQ6VQrvx0bXarpJi5FAUWD-cElD9gVxXQ-abSU8F6sWpbtOuExsmOUBULjg/exec', {
+                fetch('https://script.google.com/macros/s/AKfycbwdYrMeKVLKR5Up6hrCH1jHyIiY9OSAFN-bx8nY_ylzCN7Lc1OpBqr7dXluZ-CPN2m6og/exec', {
                     method: 'POST',
                     mode: 'no-cors',
                     headers: {
