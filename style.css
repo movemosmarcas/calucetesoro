@@ -1557,3 +1557,12 @@ body {
         transform: translateX(50%) translateY(0) !important;
     }
 }
+
+.hero-wa-btn {
+    align-self: flex-start !important;
+}
+@media (max-width: 900px) {
+    .hero-wa-btn {
+        align-self: center !important;
+    }
+}
