@@ -180,7 +180,20 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     // Video Modal Open Logic
+    
+    const videoContainer = document.getElementById('video-container-dynamic');
+
+    window.openLocalVideoModal = function(src) {
+        if (src) {
+            videoContainer.innerHTML = `<video id="local-video-player" src="${src}" controls autoplay style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000;"></video>`;
+            videoModal.style.display = "flex";
+            setTimeout(() => videoModal.classList.add('show'), 10);
+        }
+    };
+
     window.openVideoModal = function(youtubeId) {
+        videoContainer.innerHTML = `<iframe id="youtube-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+        const youtubeIframe = document.getElementById('youtube-iframe');
         if (!youtubeId) {
             alert("Video próximamente disponible");
             return;

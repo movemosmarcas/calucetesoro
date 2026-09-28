@@ -268,7 +268,7 @@
             <div style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; width: 100%;">
                 <div style="width: 100%;">
                     <h3 class="video-preview-title" style="margin-bottom: 2rem; width: max-content;">Mira este video recorrido por nuestra sede</h3>
-                    <div class="video-box" style="cursor: pointer; width: 100%; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" data-youtube-id="F8IbhMxmTkQ" onclick="openVideoModal(this.dataset.youtubeId)">
+                    <div class="video-box" style="cursor: pointer; width: 100%; box-shadow: 0 20px 40px rgba(0,0,0,0.15);" onclick="openLocalVideoModal('landing el tesoro.mp4')">
                         <img src="Imagenes/IMG_0624.webp" alt="Video recorrido Calucé" class="video-thumb" style="width: 100%; height: auto; aspect-ratio: 16/9; object-fit: cover;">
                         <div class="video-overlay"></div>
                         <button class="play-btn" aria-label="Reproducir video">
@@ -498,7 +498,7 @@
     <div id="video-modal" class="modal">
         <div class="modal-content video-modal-content">
             <span class="close-modal" id="close-video-modal">&times;</span>
-            <div class="video-iframe-container">
+            <div class="video-iframe-container" id="video-container-dynamic">
                 <iframe id="youtube-iframe" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
