@@ -185,7 +185,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.openLocalVideoModal = function(src) {
         if (src) {
-            videoContainer.innerHTML = `<video id="local-video-player" src="${src}" controls autoplay style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000;"></video>`;
+            const videoModal = document.getElementById('video-modal');
+            videoContainer.innerHTML = `<video id="local-video-player" src="${src}" controls autoplay playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: #000;"></video>`;
             videoModal.style.display = "flex";
             setTimeout(() => videoModal.classList.add('show'), 10);
         }
